@@ -1,0 +1,152 @@
+@import url(./app.js);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: serif;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.site-header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.5s ease;
+}
+
+.site-header.white-color {
+  background-color: #fff;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-loigo {
+  width: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: border 0.3s;
+  object-fit: cover;
+}
+
+.site-header.white-color .site-loigo {
+  border-color: #000;
+  border-radius: 5px;
+}
+
+.site-loigo:hover {
+  opacity: 0.8;
+}
+
+.site-loigo:active {
+  opacity: 0.6;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.items {
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.site-header.white-color .items {
+  color: #000;
+}
+
+.items:hover {
+  color: red;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.hero-video {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.text {
+  background-color: darkslategray;
+  color: darkgrey;
+}
+
+.big {
+  padding-top: 50px;
+}
+
+.smol {
+  padding-top: 30px;
+}
+
+.smol:nth-child(4) {
+  padding-bottom: 50px;
+}
